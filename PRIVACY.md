@@ -22,3 +22,5 @@ The app does not communicate with any third-party services. When you save a URL,
 
 ## 5. Contact Us
 If you have any questions about this Privacy Policy, please contact the developer.
+
+
