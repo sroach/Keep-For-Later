@@ -1,4 +1,4 @@
-e # KeepForLater
+# KeepForLater
 
 KeepForLater is a SwiftUI-based iOS and iPadOS app designed to help you quickly save URLs, text snippets, and notes for later reading. It features offline-first storage using SwiftData and supports data portability via JSON import/export.
 
@@ -6,20 +6,20 @@ KeepForLater is a SwiftUI-based iOS and iPadOS app designed to help you quickly 
 
 1. **Open the Project**: Open `Keep For Later.xcodeproj` in Xcode 15 or later.
 2. **Configure App Groups**:
-    - To enable sharing between the main app and the Share Extension, you must create an App Group.
-    - Go to the **Capabilities** tab for the main app target.
-    - Add the **App Groups** capability.
-    - Add a new group (e.g., `group.yourname.keepforlater`).
-    - Update `SharedContainer.swift` with your new App Group ID:
-      ```swift
-      static let appGroupIdentifier = "group.yourname.keepforlater"
-      ```
+   - To enable sharing between the main app and the Share Extension, you must create an App Group.
+   - Go to the **Capabilities** tab for the main app target.
+   - Add the **App Groups** capability.
+   - Add a new group (e.g., `group.yourname.keepforlater`).
+   - Update `SharedContainer.swift` with your new App Group ID:
+     ```swift
+     static let appGroupIdentifier = "group.yourname.keepforlater"
+     ```
 3. **Add Share Extension Target** (If not already present):
-    - Go to **File > New > Target...**
-    - Select **Share Extension**.
-    - Name it `KeepForLaterShare`.
-    - Ensure the new target also has the **App Groups** capability enabled with the same ID.
-    - Link the source files from `Keep For Later/Extensions` to this new target.
+   - Go to **File > New > Target...**
+   - Select **Share Extension**.
+   - Name it `KeepForLaterShare`.
+   - Ensure the new target also has the **App Groups** capability enabled with the same ID.
+   - Link the source files from `Keep For Later/Extensions` to this new target.
 
 ## Entitlements & Capabilities
 
